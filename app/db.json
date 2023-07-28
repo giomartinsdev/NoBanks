@@ -1,0 +1,49 @@
+{
+    "usuarios": {
+        "cliente_0": {
+            "cliente_common_info": {
+                "name": "ADMIN",
+                "id": "0"
+            },
+            "cliente_personal_info": {
+                "email": "ADMIN@ADMIN.com",
+                "cpf": "00000000000",
+                "senha": "ADMIN00",
+                "admin": true
+            },
+            "cliente_saldo": {
+                "saldo": 10000.0
+            }
+        },
+        "cliente_1": {
+            "cliente_common_info": {
+                "name": "Cleiton",
+                "id": "1"
+            },
+            "cliente_personal_info": {
+                "email": "CleitonRocha@gmail.com",
+                "cpf": "16573589630",
+                "senha": "123456",
+                "admin": false
+            },
+            "cliente_saldo": {
+                "saldo": 756.0
+            }
+        },
+        "cliente_2": {
+            "cliente_common_info": {
+                "name": "Junior",
+                "id": "2"
+            },
+            "cliente_personal_info": {
+                "email": "JuniorDevv@outlook.com",
+                "cpf": "15283906520",
+                "senha": "654321",
+                "admin": false
+            },
+            "cliente_saldo": {
+                "saldo": 10.0
+            }
+        }
+    }
+}
