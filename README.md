@@ -1,4 +1,4 @@
-# Sistema de Gerenciamento de Contas Bancárias 💰💳
+# NoBanks! um Sistema de Gerenciamento de Contas Bancárias 💰💳
 
 Este é um sistema simples de gerenciamento de contas bancárias em Python. Permite aos usuários realizarem operações como depósito, saque, transferência entre contas e outras ações relacionadas a contas.
 
