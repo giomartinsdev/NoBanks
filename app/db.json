@@ -12,7 +12,7 @@
                 "admin": true
             },
             "cliente_saldo": {
-                "saldo": 10000.0
+                "saldo": 1000000000.0
             }
         },
         "cliente_1": {
@@ -43,6 +43,36 @@
             },
             "cliente_saldo": {
                 "saldo": 10.0
+            }
+        },
+        "cliente_3": {
+            "cliente_common_info": {
+                "name": "MARCELAO",
+                "id": "3"
+            },
+            "cliente_personal_info": {
+                "email": "MARCELAOX@gmail.com",
+                "cpf": "39187392673",
+                "senha": "00snk",
+                "admin": false
+            },
+            "cliente_saldo": {
+                "saldo": 300.0
+            }
+        },
+        "cliente_4": {
+            "cliente_common_info": {
+                "name": "CLEITON RRASTA",
+                "id": "4"
+            },
+            "cliente_personal_info": {
+                "email": "CLEITONRRASTA@GMAIL.COM",
+                "cpf": "12345678910",
+                "senha": "282930",
+                "admin": false
+            },
+            "cliente_saldo": {
+                "saldo": 1000.0
             }
         }
     }

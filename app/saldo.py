@@ -40,12 +40,13 @@ def depositar_saldo(cliente_id, valor):
     ## Fazendo a adição do antigo saldo mais o novo saldo depositado
     if cliente_info:
         saldo_atual = float(cliente_info["cliente_saldo"]["saldo"])  # Convertendo o saldo para float
-        cliente_info["cliente_saldo"]["saldo"] = saldo_atual + valor
+        saldo_atual = saldo_atual + valor
+        cliente_info["cliente_saldo"]["saldo"] = saldo_atual
 
         ## Salvando dados no db.JSON
         with open("db.json", 'w') as file:
             json.dump(conteudo_atual, file, indent=4)
-        print(f"Depósito realizado com sucesso para o usuário {cliente_name} de id {cliente_id}.")
+        print(f"Depósito realizado com sucesso no valor de {valor} seu saldo atual é {saldo_atual}.")
     else:
         print(f"Cliente com ID {cliente_id} não encontrado.")
 
@@ -65,11 +66,12 @@ def sacar_saldo(cliente_id, valor):
     ## Fazendo a subtração do antigo saldo sobre o valor retirado
     if cliente_info:
         saldo_atual = float(cliente_info["cliente_saldo"]["saldo"])  # Convertendo o saldo para float
-        cliente_info["cliente_saldo"]["saldo"] = saldo_atual - valor
+        saldo_atual = saldo_atual - valor
+        cliente_info["cliente_saldo"]["saldo"] = saldo_atual
 
         ## salvando dados do no.JSON
         with open("db.json", 'w') as file:
             json.dump(conteudo_atual, file, indent=4)
-        print(f"Saque efetuado com sucesso para o usuário de nome {cliente_name} e de id {cliente_id}.")
+        print(f"Saque efetuado com sucesso no valor de {valor} seu saldo atual é {saldo_atual}.")
     else:
         print(f"Cliente com ID {cliente_id} não encontrado.")
